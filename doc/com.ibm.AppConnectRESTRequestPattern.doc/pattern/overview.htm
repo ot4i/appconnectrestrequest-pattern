@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="./css/pattern.css"/>
+        <title>App Connect REST Pattern</title>
+    </head>
+    <body>
+        <h1 class="topictitle1">App Connect REST Pattern</h1>
+        <div>
+            <p class="shortdesc"></p>
+        </div>
+        <p>IBM App Connect is a Software as a Service (SaaS) solution that provides 
+        a simple web based experience for easily creating app-to-app connections in a few minutes.
+        You can connect SaaS apps, so that when an event occurs in one app the 
+        other connected apps are updated automatically.</p> 
+        
+         <img src="icon_banner.png" alt="icon_banner" align="middle" height="144" width="676"/> 
+        
+        <p>App Connect also enables users to expose a REST API flow, so that when the request is submitted 
+        (such as through a mobile or web application), the flow performs all its actions, and then returns a response.
+        IBM App Connect is available as a <a href="https://console.bluemix.net/catalog/services/app-connect">service 
+        as part of IBM Cloud</a>.</p> 
+          
+        <div class="section">
+            <h2 class="sectiontitle">Solution</h2>
+        </div>
+        
+		<p>This pattern helps accelerate users wanting to connect IBM Integration Bus to SaaS applications.
+		Menus on the pattern let you select the SaaS application you'd like to connect with and the action you'd 
+		like to execute. The pattern generates a simple IIB message flow containing an App Connect REST Request node, 
+		and an App Connect Template. You import the Template into App Connect, and provide the required 
+		credentials to access the SaaS application.  Once deployed, the IIB message flow invokes App Connect using 
+		REST (JSON over HTTPS with Basic Authentication).</p>
+		
+		<img src="Solution.png" alt="solution" align="middle" height="91" width="706"/>
+		
+		<div class="familylinks">
+			<a name="anchorBack"></a>
+			<div class="section">
+				<h2 class="sectiontitle">Related information</h2>
+			</div>
+			<div><a href="parameters.htm">Parameters for the pattern</a></div>
+			<div><a href="tasks.htm">Tasks to complete after generating the pattern</a></div>
+			<div><a href="https://www.ibm.com/support/knowledgecenter/en/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bz91500_.htm">IBM Knowledge Center - AppConnectRESTRequest node</a></div>
+			<div><a href="https://www.ibm.com/support/knowledgecenter/en/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bz91510_.htm">IBM Knowledge Center - Connecting to an App Connect REST API</a></div>			
+			<div><a href="https://www.ibm.com/support/knowledgecenter/en/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bz91520_.htm">IBM Knowledge Center - Configuring security credentials for connecting to an App Connect REST API</a></div>
+		</div>
+    </body>
+</html>
